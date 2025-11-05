@@ -1,5 +1,6 @@
 type iconProps = {
     className?: string;
+    onClick?: () => void;
 }
 
 export function ReactIcon({ className } : iconProps) {
@@ -216,4 +217,27 @@ export function DownArrow( {className}: iconProps){
             <path d="M16 10.99L13.13 14.05C12.9858 14.2058 12.811 14.3298 12.6166 14.4148C12.4221 14.4998 12.2122 14.5437 12 14.5437C11.7878 14.5437 11.5779 14.4998 11.3834 14.4148C11.189 14.3298 11.0142 14.2058 10.87 14.05L8 10.99" stroke="#000000" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
     </svg>  
     )
+}
+export function ResumeIcon({ className, onClick }: iconProps) {
+    return (
+        <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 64 64"
+            className={className}
+            onClick={onClick}
+        >
+            <g fill="#37474f" stroke="#37474f" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round">
+                <path d="M11 2.5c0-1.1.9-2 2-2s2 .9 2 2v8c0 1.1-.9 2-2 2s-2-.9-2-2v-3c0-.6.4-1 1-1s1 .4 1 1v3M48 50.5V54c0 1.4-1.1 2.5-2.5 2.5H42M26.6 61H12.5c-1.4 0-2.5-1.1-2.5-2.5"/>
+                <path d="M52.5 46v12.5c0 1.4-1.1 2.5-2.5 2.5H37.5M50 9c1.4 0 2.5 1.1 2.5 2.5v20.6M28.1 56.5H8.5C7.1 56.5 6 55.4 6 54V7c0-1.4 1.1-2.5 2.5-2.5h37C46.9 4.5 48 5.6 48 7v26.5"/>
+                <path d="M42 23.5H32c-.6 0-1-.4-1-1v-12c0-.6.4-1 1-1h10c.6 0 1 .4 1 1v12c0 .5-.4 1-1 1z"/>
+                <circle cx="37" cy="16.5" r="2.7" fill="#fff"/>
+                <path d="M41 23.5h-8v-.3c0-2.2 1.8-4 4-4s4 1.8 4 4v.3z" fill="#fff"/>
+                <path d="M11 23.5h8M11 15.5h8M11 18.5h16M11 28.5h32M11 33.5h16M11 38.5h16M11 43.5h16M11 48.5h8" fill="none"/>
+                <path d="m56.6 34.2.7.7c1 1 1 2.6 0 3.5L37.8 57.8l-4.2-4.2L53 34.2c1-1 2.6-1 3.6 0z" fill="#ffb300"/>
+                <path d="m33.6 53.6 4.2 4.2-3.5 3.6-6.4 2.1 2.1-6.4z"/>
+                <path d="m29.3 59.3-1.4 4.2 4.3-1.4zM49.8 34.5l-7 7.1"/>
+                <path d="M57.3 38.4 53 34.2"/>
+            </g>
+        </svg>
+    );
 }
