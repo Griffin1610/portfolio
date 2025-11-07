@@ -14,23 +14,23 @@ export default function Navigation() {
   };
 
   return (
-    <div className="fixed inset-0 z-50">
+    <>
       {index > 0 && (
         <button
           onClick={() => scrollTo(index - 1)}
-          className="absolute top-4 left-1/2 transform -translate-x-1/2 pointer-events-auto"
+          className="fixed top-4 left-1/2 transform -translate-x-1/2 z-50"
         >
-          <UpArrow className="w-10" />
+          <UpArrow className="w-10 pb-185" />
         </button>
       )}
       {index < sections.length - 1 && (
         <button
           onClick={() => scrollTo(index + 1)}
-          className="absolute bottom-4 left-1/2 transform -translate-x-1/2 pointer-events-auto"
+          className="fixed bottom-4 left-1/2 transform -translate-x-1/2 z-50"
         >
           <DownArrow className="w-10" />
         </button>
       )}
-    </div>
+    </>
   );
 }
