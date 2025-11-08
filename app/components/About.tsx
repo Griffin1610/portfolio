@@ -16,7 +16,7 @@ export default function About() {
                     </div>
                 </div>
                 <div className="gap-10">
-                    <h3 className="font-heading text-xl pl-30 pt-15">Some of The Technologies Im Experienced with</h3>
+                    <h3 className="font-heading2 text-xl pl-30 pt-15">Some of The Technologies Im Experienced with</h3>
                     <div id="row-1"className="flex pt-10">
                         <JavaScriptIcon className="w-20 ml-33" />
                         <TypeScriptIcon className="w-20 ml-10" />

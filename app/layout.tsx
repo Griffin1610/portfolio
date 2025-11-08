@@ -9,7 +9,7 @@ const lexend = Lexend_Deca({ subsets: ['latin'], weight: ['400','500','700'], va
 export default function RootLayout({ children }: Readonly<{children: React.ReactNode;}>) {
     return (
         <html className={`${inter.variable} ${lexend.variable}`}>
-            <body>
+            <body className="overflow-hidden">
                 {children}
                 <Analytics />
             </body>

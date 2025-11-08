@@ -1,11 +1,27 @@
 @import "tailwindcss";
 
+
+@theme {
+  --color-background1: #edf6f9;
+  --color-heading1: #e63946;
+  --color-heading2: #0d3b66;
+  --color-text1: #000000;
+}
+
 .font-body {
   font-family: var(--font-body);
   font-weight: 400;
+  color: var(--color-text1);
 }
 
 .font-heading {
   font-family: var(--font-heading);
   font-weight: 400;
+  color: var(--color-heading1);
+}
+
+.font-heading2 {
+  font-family: var(--font-heading);
+  font-weight: 400;
+  color: var(--color-heading2);
 }
