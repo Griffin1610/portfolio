@@ -9,11 +9,11 @@ export default function Projects() {
                     <Link href="https://mtgbrowser.com" target="_blank" rel="noopener noreferrer" className="font-heading text-2xl hover:text-blue-500">MTG Browser</Link>
                     <h3 className="font-heading2">TypeScript, React,Next.js</h3>
                     <p className="font-body pt-3 w-[55%]">MTG Browser is a web application created for exploring Magic: The Gathering cards. It allows
-                        Users to search for cards to view their stats and price, view entire sets and colections, as well as simulate
+                        Users to search for cards to view their stats and price, view entire sets and collections, as well as simulate
                          drafts. The project is deployed through Vercel at mtgbrowser.com, and can also be reached at the above proect name.
                     </p>
                     <div className="pl-5">
-                        <li className="font-body pt-2">Currently has use from over 30 unique users across the globe</li>
+                        <li className="font-body pt-2">Currently has use from over 40 unique users across the globe</li>
                     </div>
                 </div>
                 <div id="project2" className="pt-15">
