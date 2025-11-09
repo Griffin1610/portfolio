@@ -1,27 +1,11 @@
-import About from './components/About'
-import Projects from './components/Projects'
-import Resume from './components/Resume'
-import Welcome from './components/Welcome';
-import Navigation from './components/Navigation';
-
-export default function Home() {
+export default function Welcome() {
     return (
-        <>
-            <main className="bg-background1">
-                <section id="welcome">
-                    <Welcome />
-                </section>
-                <section id="about">
-                    <About />
-                </section>
-                <section id="projects">
-                    <Projects />
-                </section>
-                <section id="resume">
-                    <Resume />
-                </section>
-            </main>
-            <Navigation />
-        </>
-    );
+        <section className="h-screen">
+            <div className="pt-[20%] pl-[10%]">
+                <h1 className="text-5xl font-heading">Hi, Im Griffin</h1>
+                <h2 className="text-xl pt-2 font-body">Welcome to my porfolio</h2>
+                <p className="pt-0.5 font-body">Please check out my Experience, Projects, and Resume below</p>
+            </div>
+        </section>
+    )
 }

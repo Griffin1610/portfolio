@@ -1,14 +1,14 @@
 import Image from 'next/image';
-import { ReactIcon, NextIcon, TypeScriptIcon, JavaScriptIcon, PHPIcon, PythonIcon, CSIcon, GitIcon, TailwindIcon, LaravelIcon, NodeJSIcon, ElectronIcon } from '../components/icons';
+import { JavaScriptIcon, TypeScriptIcon, PythonIcon, CSIcon, PHPIcon, ReactIcon, NextIcon, NodeJSIcon, LaravelIcon, ElectronIcon, GitIcon, TailwindIcon } from '../../components/icons';
 
-export default function About() {
+export default function aboutPage() {
     return (
-        <section className="pl-[10%] h-screen pt-30">
+        <section className="pl-[10%] h-screen pt-40">
             <h1 className="font-heading text-4xl">About Me</h1>
                 <div className="flex">
                     <p className="font-body pt-5 w-[50%]">
                         I am a software developer graduating in December 2025 from the University of Wisconsin–Whitewater. 
-                        I have practical experience building web applications using TypeScript, JavaScript, React, and Next.js, with additional experience using Python and C#. 
+                        I have practical experience building web applications using TypeScript, JavaScript, React, and Next.js, with additional experience using Python and .NET. 
                         I'm passionate about contributing to meaningful work, and I am excited to make a positive impact on a team.
                     </p>
                     <div className="pl-40 -mt-8">
@@ -37,5 +37,5 @@ export default function About() {
                     </div>
                 </div>
         </section>
-    )
+    );
 }

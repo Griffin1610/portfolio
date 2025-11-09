@@ -1,6 +1,7 @@
 import "./globals.css";
 import { Inter, Lexend_Deca } from 'next/font/google';
 import { Analytics } from '@vercel/analytics/next';
+import NavigationBar from "../app/components/NavigationBar";
 
 
 const inter = Inter({ subsets: ['latin'], weight: ['400','500','700'], variable: '--font-body' });
@@ -9,7 +10,8 @@ const lexend = Lexend_Deca({ subsets: ['latin'], weight: ['400','500','700'], va
 export default function RootLayout({ children }: Readonly<{children: React.ReactNode;}>) {
     return (
         <html className={`${inter.variable} ${lexend.variable}`}>
-            <body className="overflow-hidden">
+            <body className="overflow-hidden bg-background1">
+                <NavigationBar />
                 {children}
                 <Analytics />
             </body>
