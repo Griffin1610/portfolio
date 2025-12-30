@@ -10,10 +10,11 @@ export default function ProjectPage() {
                     <h3 className="font-heading2">TypeScript, React,Next.js</h3>
                     <p className="font-body pt-3 w-[65%]">MTG Browser is a web application created for exploring Magic: The Gathering cards. It allows
                         Users to search for cards to view their stats and price, view entire sets and collections, as well as simulate
-                         drafts. The project is deployed through Vercel at mtgbrowser.com, and can also be reached at the above proect name.
+                         drafts. The project is deployed through Vercel, and can also be reached at the above proect name.
                     </p>
                     <div className="pl-5">
-                        <li className="font-body pt-2">Currently has use from over 40 unique users across the globe.</li>
+                        <li className="font-body pt-2">Currently has seen use from over 150 unique users across the globe.</li>
+                        <li className="font-body pt-2">Features dynamic search, card filtering, and SSR, which achieve near instant load times</li>
                     </div>
                 </div>
                 <div id="project2" className="pt-15">
@@ -23,6 +24,10 @@ export default function ProjectPage() {
                         seasons from the 2022-2023 NBA roster. By exploring a variety of team options, users will see who has what it takes to make the playoffs
                         or win the NBA finals. The project is deployed through Render and can be reached at at the above project name.
                     </p>
+                    <div className ="pl-5">
+                        <li className="font-body pt-2"> manages a database of 400+ players.</li>
+                        <li className="font-body pt-2"> Utilizes CRUD operations, MVC architecture, as well as authentication via Laravel Breeze.</li>
+                    </div>
                 </div>                
         </section>
     )

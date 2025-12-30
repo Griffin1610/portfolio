@@ -7,7 +7,7 @@ export default function NavigationBar() {
 
   const linkClass = (path : string) =>
   `flex items-center justify-center h-full px-6 text-sm font-medium transition ${
-    currentPage === path ? "bg-heading1 text-white" : "hover:bg-gray-200 text-gray-700"
+    currentPage === path ? "bg-heading1 text-white" : "hover:bg-red-300 text-gray-700"
   }`;
 
 

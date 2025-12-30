@@ -2,6 +2,7 @@ import "./globals.css";
 import { Inter, Lexend_Deca } from 'next/font/google';
 import { Analytics } from '@vercel/analytics/next';
 import NavigationBar from "../app/components/NavigationBar";
+import CornerTriangles from "../app/components/triangles";
 
 
 const inter = Inter({ subsets: ['latin'], weight: ['400','500','700'], variable: '--font-body' });
@@ -14,6 +15,7 @@ export default function RootLayout({ children }: Readonly<{children: React.React
                 <NavigationBar />
                 {children}
                 <Analytics />
+                <CornerTriangles />
             </body>
         </html>
     );
