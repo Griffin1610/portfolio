@@ -3,7 +3,7 @@ import Link from "next/link";
 export default function ExperiencePage() {
     return (
         <section className="h-screen pl-[10%] pt-40 w-[70%]">
-                <div>
+                <div className="animate-fade-in">
                     <h1 className="font-heading text-4xl">Experience</h1>
                     <div id="internship">
                         <h3 className="text-xl font-heading2 pt-10">Software Development Intern</h3>
