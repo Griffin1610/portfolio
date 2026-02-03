@@ -5,7 +5,7 @@ export default function Welcome() {
     const [Delay1, setDelay1] = useState(false);
     const [Delay2, setDelay2] = useState(false);
     const [typed, setTyped] = useState("");
-    const text = "Hi, Im Griffin";
+    const text = "Hi, I'm Griffin";
 
     useEffect(() => {
         const hasVisited = sessionStorage.getItem("welcomeVisited");
@@ -42,7 +42,7 @@ export default function Welcome() {
                 <h1 className="text-6xl font-heading animate-fade-in">{typed}</h1>
                     {Delay1 &&
                     <>
-                        <h2 className="text-2xl pt-4 font-body animate-fade-in2">Welcome to my porfolio</h2>
+                        <h2 className="text-2xl pt-4 font-body animate-fade-in2">Welcome to my portfolio</h2>
                     </>
                     }
                     {Delay2 &&
