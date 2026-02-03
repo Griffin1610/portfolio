@@ -19,7 +19,7 @@ export default function Welcome() {
                     }
                 };
                 type();
-                const t1 = setTimeout(() => setDelay1(true), 2000);
+                const t1 = setTimeout(() => setDelay1(true), 2300);
                 const t2 = setTimeout(() =>  setDelay2(true), 3000);
 
                 sessionStorage.setItem("welcomeVisited", "true");

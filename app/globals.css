@@ -2,10 +2,10 @@
 
 
 @theme {
-  --color-background1: #dcf6fa;
-  --color-heading1: #e63946;
-  --color-heading2: #0d3b66;
-  --color-text1: #000000;
+  --color-background1: #0a0f1a;
+  --color-heading1: #60a5fa;
+  --color-heading2: #cbd5e1;
+  --color-text1: #e2e8f0;
 }
 
 @theme {
@@ -21,7 +21,43 @@
         0% { opacity: 0; }
         100% { opacity: 1; }
     }
+
 }
+
+@keyframes tri-glow-a {
+    0%, 100% { background-color: #111827; }
+    50% { background-color: #1e3a5f; }
+}
+
+@keyframes tri-glow-b {
+    0%, 100% { background-color: #1e293b; }
+    50% { background-color: #2563eb; }
+}
+
+@keyframes tri-glow-c {
+    0%, 100% { background-color: #334155; }
+    50% { background-color: #3b82f6; }
+}
+
+.tri-glow-1 {
+    animation: tri-glow-a 10s ease-in-out infinite;
+}
+
+.tri-glow-2 {
+    animation: tri-glow-b 10s ease-in-out infinite;
+}
+
+.tri-glow-3 {
+    animation: tri-glow-c 10s ease-in-out infinite;
+}
+
+.tri-glow-1:hover,
+.tri-glow-2:hover,
+.tri-glow-3:hover {
+    animation: none;
+    background-color: #3166a7;
+}
+
 .font-body {
   font-family: var(--font-body);
   font-weight: 400;
